@@ -4,6 +4,7 @@ import { Header, tabs } from './components/Header'
 import { Hero } from './components/Hero'
 import { AnnouncementTicker } from './components/AnnouncementTicker'
 import { Preloader } from './components/Preloader'
+import { ScrollProgress } from './components/ScrollProgress'
 import { About } from './sections/About'
 import { Committee } from './sections/Committee'
 import { Contact } from './sections/Contact'
@@ -85,6 +86,7 @@ export default function App() {
   return (
     <>
       <Preloader />
+      <ScrollProgress />
       <a className="skip-link" href="#main-content">Skip to content</a>
       <div className="app-shell">
         <Header activeTab={activeTab} menuOpen={menuOpen} onSelect={selectTab} onMenuToggle={toggleMenu} />
