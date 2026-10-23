@@ -34,12 +34,6 @@ export interface Speaker extends Person {
   category: 'International' | 'National'
 }
 
-export interface FacultyMember extends Person {
-  designation: string
-  qualification: string
-  interests: string
-}
-
 export interface DateItem {
   label: string
   date: string

@@ -1,7 +1,7 @@
 import type { DateItem, FeeRow, Person } from '../types'
 
 export const conference = {
-  shortName: 'IVDC-27',
+  shortName: 'IVDC-2027',
   fullName: 'IVDC-2027',
   eyebrow: 'International Conference',
   title: 'Intelligent Value Creation in a Digital Civilization',
@@ -9,7 +9,9 @@ export const conference = {
   venue: 'BIT Mesra, Patna Campus',
   date: '22nd – 23rd January 2027',
   organizer: 'Department of Management Studies, Birla Institute of Technology – Mesra Patna',
-  paperLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfwOXg0xnnbBAcWKNm7Ks4MRZnK9OJMCIbl2iAzQvmmAbH6w/viewform',
+  paperLink: 'https://docs.google.com/forms/d/e/1FAIpQLSd1-1EVc4Q2TAf8m-K1VrMiMboC7M3ElwR69SfYdfZ3DUvSdg/viewform?usp=publish-editor',
+  registrationLink: 'https://docs.google.com/forms/d/1zHInGDA-rmIXJUHYgBd6FrhbQRj8DuWj93tYqY90QJY/edit',
+  brochureAsset: 'IVDC-2027-Brochure.pdf',
   instituteLink: 'https://bitmesra.ac.in/bitpatna',
   address: 'Department of Management Studies, Birla Institute of Technology, Off Campus Patna, PO – BV College, Patna – 800014, Bihar',
 }
@@ -24,7 +26,7 @@ export const dates: DateItem[] = [
 
 export const fees: FeeRow[] = [
   { category: 'Students', earlyBird: '₹700', regular: '₹1,000' },
-  { category: 'Faculty & PhD Scholars', earlyBird: '₹3,000', regular: '₹4,500' },
+  { category: 'Faculty & PhD Scholars', earlyBird: '₹3,000', regular: '₹4,000' },
   { category: 'Industry Participants', earlyBird: '₹5,000', regular: '₹6,500' },
   { category: 'International Delegates', earlyBird: '$150', regular: '$250' },
 ]
@@ -38,5 +40,5 @@ export const contacts: Person[] = [
 export const socials = [
   { label: 'Instagram', short: 'IG', href: 'https://www.instagram.com/bitmpatna/' },
   { label: 'Facebook', short: 'FB', href: 'https://www.facebook.com/profile.php?id=61572278246230' },
-  { label: 'LinkedIn', short: 'in', href: 'https://www.linkedin.com/in/department-of-management-bit-patna-campus-ab5711346/' },
+  { label: 'LinkedIn', short: 'in', href: 'https://www.linkedin.com/company/bit-mesra/' },
 ]

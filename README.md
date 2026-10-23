@@ -1,4 +1,4 @@
-# IVDC-27 Conference Website
+# IVDC-2027 Conference Website
 
 React + TypeScript + Vite single-page conference website for the International Conference on **Intelligent Value Creation in a Digital Civilization** at BIT Mesra, Patna.
 
@@ -22,4 +22,4 @@ The site uses hash-based sections (`#home`, `#tracks`, `#committee`, and so on) 
 
 ## Content sources
 
-The supplied brochure pages and Word document are preserved in `public/assets/source-assets/`. Conference content is rendered from the typed files in `src/data/`.
+The supplied brochure pages and Word document are preserved in `public/assets/source-assets/`. The current two-page brochure PDF is available at `public/assets/IVDC-2027-Brochure.pdf` and is linked from the hero and footer. Conference content is rendered from the typed files in `src/data/`.

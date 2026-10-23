@@ -1,4 +1,4 @@
-import type { CommitteeGroup, FacultyMember, Person, Speaker } from '../types'
+import type { CommitteeGroup, Person, Speaker } from '../types'
 
 export const committeeGroups: CommitteeGroup[] = [
   {
@@ -54,27 +54,16 @@ export const advisoryCommittee: Person[] = [
 export const internationalSpeakers: Speaker[] = [
   { name: 'Prof. Weng Marc Lim', category: 'International', role: 'Professor and Dean', affiliation: 'Sunway Business School, Sunway University' },
   { name: 'Dr. Vinod Mishra', category: 'International', role: 'Professor & Director of Education, Economics', affiliation: 'Monash Business School, Monash University, Australia' },
-  { name: 'Prof. Tapas Mishra', category: 'International', role: 'Professor of Financial Economics', affiliation: 'University of Southampton, United Kingdom' },
-  { name: 'Dr. Raj Kumar Singh', category: 'International', role: 'Professor of Management', affiliation: 'University of California, Riverside, United States' },
+  { name: 'Prof. Tapas Mishra', category: 'International', role: 'Professor', affiliation: 'University of Southampton, United Kingdom' },
   { name: 'Dr. Suzan Dsouza', category: 'International', role: 'Associate Professor', affiliation: 'American University of the Middle East, College of Business Administration, Dasman, Kuwait' },
 ]
 
 export const nationalSpeakers: Speaker[] = [
   { name: 'Prof. Arunabha Mukhopadhyay', category: 'National', role: 'Professor, Information Technology and Systems', affiliation: 'IIM Lucknow' },
-  { name: 'Prof. Tanusree Dutta', category: 'National', role: 'Professor, OB & HR', affiliation: 'IIM Ranchi' },
-  { name: 'Prof. Pratul Chandra Kalita', category: 'National', role: 'Professor & Head, Department of Design', affiliation: 'IIT Guwahati' },
   { name: 'Prof. Ganesh Prasad Sahu', category: 'National', role: 'Professor & Head, School of Management Studies', affiliation: 'MNNIT Allahabad, Prayagraj' },
-  { name: 'Dr. Sanja Samirana Pattnayak', category: 'National', role: 'Professor, Economics and Business Environment', affiliation: 'IIM Sirmaur' },
-  { name: 'Dr. Arun Kumar Giri', category: 'National', role: 'Professor, Department of Economics and Finance', affiliation: 'BITS Pilani, Pilani Campus' },
-  { name: 'Prof. Pramod Kumar Naik', category: 'National', role: 'Associate Professor', affiliation: 'Indian Institute of Technology Madras' },
-  { name: 'Dr. Pradip Kumar Mitra', category: 'National', role: 'Professor & Dean – Finance', affiliation: 'VES Institute of Management Studies & Research, Mumbai' },
-]
-
-export const faculty: FacultyMember[] = [
-  { name: 'Dr. Abhinav Kumar Shandilya', designation: 'Associate Professor and In-charge', affiliation: 'Department of Management Studies, BIT Patna', qualification: 'Ph.D. – Management (Marketing), MBA', interests: 'Marketing, hospitality management and consumer behaviour', email: 'sabhinavkumar@bitmesra.ac.in', phone: '9472711951' },
-  { name: 'Dr. Vijay Agrawal', designation: 'Associate Professor', affiliation: 'Department of Management Studies, BIT Patna', qualification: 'Ph.D. (Management), MBA (Finance), B.Sc. (Maths)', interests: 'Financial management, corporate finance and corporate accounting', email: 'vagarwal@bitmesra.ac.in', phone: '9431382607' },
-  { name: 'Dr. Ashish Mohan Dubey', designation: 'Assistant Professor', affiliation: 'Department of Management Studies, BIT Patna', qualification: 'MBA, Ph.D. (MNNIT Allahabad)', interests: 'Human resource management, public administration and organizational learning', email: 'amdubey@bitmesra.ac.in', phone: '9412005502' },
-  { name: 'Dr. M. Iftekhar Ahmad', designation: 'Assistant Professor', affiliation: 'Department of Management Studies, BIT Patna', qualification: 'Ph.D. (Management), MBA (Marketing), B.Sc. (Honours)', interests: 'Marketing, strategy, HRM, logistics and supply chain management', email: 'iftekhar@bitmesra.ac.in', phone: '+91 9006095647' },
-  { name: 'Dr. Sohini Ghosh', designation: 'Assistant Professor', affiliation: 'Department of Management Studies, BIT Patna', qualification: 'MBA, M.Sc. (Human Development)', interests: 'Human resource management, consumer behaviour and social media marketing', email: 'sohinighosh@bitmesra.ac.in', phone: '9830828701' },
-  { name: 'Dr. Monika Singh', designation: 'Assistant Professor', affiliation: 'Department of Management Studies, BIT Patna', qualification: 'Ph.D. (Management), MBA (IB & IT), B.Tech. (ECE)', interests: 'Business analytics, AI, green information systems and operations management', email: 'drmonika@bitmesra.ac.in', phone: '8765681041' },
+  { name: 'Prof. Pratul Chandra Kalita', category: 'National', role: 'Professor & Head, Department of Design', affiliation: 'IIT Guwahati' },
+  { name: 'Prof. Pramod Kumar Naik', category: 'National', role: 'Associate Professor, Finance', affiliation: 'Department of Humanities and Social Sciences, IIT Madras' },
+  { name: 'Prof. Medha Srivastava', category: 'National', role: 'Associate Professor', affiliation: 'Department of Management, IIM Bodhgaya' },
+  { name: 'Shri Subrat Kumar Swain', category: 'National', role: 'General Manager and Zonal Head', affiliation: 'Bank of Baroda' },
+  { name: 'Shri K D Gupta', category: 'National', role: 'Deputy General Manager', affiliation: 'Union Bank of India' },
 ]

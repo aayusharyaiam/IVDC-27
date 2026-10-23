@@ -4,7 +4,7 @@ import { SectionHeading } from '../components/SectionHeading'
 export function About() {
   return (
     <div className="container page-content">
-      <SectionHeading kicker="The conference" title="About IVDC-27" intro="A cross-disciplinary platform for research, policy dialogue and responsible innovation." />
+      <SectionHeading kicker="The conference" title="About IVDC-2027" intro="A cross-disciplinary platform for research, policy dialogue and responsible innovation." />
       <div className="about-layout">
         <article className="prose-card prose-card--accent">
           <span className="quote-mark">“</span>
