@@ -77,9 +77,9 @@
 .hero-theme { max-width: 630px; margin-bottom: 30px; color: rgba(255,249,240,.83); font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1rem, 1.7vw, 1.35rem); font-style: italic; line-height: 1.45; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 11px; }
 .hero-meta { position: relative; justify-self: end; width: min(100%, 340px); padding: 28px 27px 23px; background: rgba(39,13,19,.46); border: 1px solid rgba(255,255,255,.23); border-radius: 7px; backdrop-filter: blur(8px); }
-.hero-code { display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,.2); font-family: 'Playfair Display', Georgia, serif; }
-.hero-code span { color: #fffaf2; font-size: 2.55rem; letter-spacing: -.07em; }
-.hero-code strong { color: var(--gold); font-size: 3.4rem; line-height: 1; letter-spacing: -.08em; }
+.hero-code { display: flex; align-items: baseline; justify-content: flex-start; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,.2); font-family: 'Playfair Display', Georgia, serif; }
+.hero-code strong { color: #fffaf2; font-size: 3.4rem; line-height: 1; letter-spacing: -.08em; white-space: nowrap; }
+.hero-code strong span { display: inline; color: var(--gold); }
 .hero-meta-item { display: flex; gap: 13px; padding: 19px 0; border-bottom: 1px solid rgba(255,255,255,.14); }
 .hero-meta-item svg { flex: 0 0 auto; color: var(--gold); margin-top: 2px; }
 .hero-meta-item div { display: flex; flex-direction: column; gap: 4px; }
@@ -120,6 +120,7 @@
 .quote-panel blockquote { max-width: 610px; margin: 28px 0 25px; color: var(--burgundy); font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.75rem, 3vw, 2.65rem); font-style: italic; line-height: 1.1; letter-spacing: -.035em; }
 .quote-rule { width: 70px; height: 3px; background: var(--gold-deep); }
 .quick-panel { color: #fff; background: var(--burgundy); }
+.quick-panel .section-kicker, .publication-heading .section-kicker { color: var(--gold); }
 .quick-panel h3 { margin: 28px 0 23px; color: #fff7ef; font-family: 'Playfair Display', Georgia, serif; font-size: 1.95rem; font-weight: 500; }
 .quick-date { display: flex; align-items: center; gap: 15px; margin-bottom: 23px; }
 .quick-date strong { color: var(--gold); font-family: 'Playfair Display', Georgia, serif; font-size: 3rem; line-height: .85; letter-spacing: -.08em; }
@@ -325,8 +326,8 @@
 /* Footer */
 .site-footer { color: rgba(255,255,255,.75); background: var(--ink); }
 .footer-main { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; padding-top: 54px; padding-bottom: 45px; }
-.footer-brand img { width: 125px; height: auto; margin-bottom: 25px; filter: brightness(0) invert(1); opacity: .9; }
-.footer-mark { display: block; color: #fff; font-family: 'Playfair Display', Georgia, serif; font-size: 2.25rem; letter-spacing: -.06em; }
+.footer-brand img { width: 155px; height: auto; margin-bottom: 25px; padding: 8px 10px; background: #fff; border-radius: 4px; opacity: 1; }
+.footer-mark { display: block; color: #fff; font-family: 'Playfair Display', Georgia, serif; font-size: 2.25rem; letter-spacing: -.06em; white-space: nowrap; }
 .footer-mark span { color: var(--gold); }
 .footer-brand p { max-width: 260px; margin: 10px 0 0; color: rgba(255,255,255,.7); font-size: .76rem; }
 .footer-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-content: start; justify-self: end; min-width: 300px; }
@@ -336,7 +337,8 @@
 .footer-nav button:hover, .footer-nav a:hover { color: #fff; }
 .developer-band { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 17px 0; border-top: 1px solid rgba(255,255,255,.14); border-bottom: 1px solid rgba(255,255,255,.14); color: rgba(255,255,255,.68); font-size: .65rem; }
 .developer-list { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 18px; }
-.developer-list > span { color: rgba(255,255,255,.82); font-size: .7rem; }
+.developer-list > a { color: rgba(255,255,255,.82); font-size: .7rem; text-decoration: none; }
+.developer-list > a:hover { color: #fff; }
 .developer-list small { display: block; margin-top: 3px; color: var(--gold); font-size: .57rem; letter-spacing: .05em; }
 .footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 15px; min-height: 55px; color: rgba(255,255,255,.42); font-size: .64rem; }
 .footer-bottom a { display: inline-flex; align-items: center; gap: 5px; color: rgba(255,255,255,.7); text-decoration: none; }

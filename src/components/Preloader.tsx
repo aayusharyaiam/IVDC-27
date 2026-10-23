@@ -17,7 +17,7 @@ export function Preloader() {
   if (!visible) return null
 
   return (
-    <div className={`preloader ${leaving ? 'is-leaving' : ''}`} role="status" aria-label="Loading IVDC-2027">
+    <div className={`preloader ${leaving ? 'is-leaving' : ''}`} role="status" aria-label="Loading IVDC–2027">
       <div className="preloader-mark"><Icon name="spark" size={30} stroke={1.4} /></div>
       <strong>IVDC<span>–2027</span></strong>
       <small>International Conference</small>

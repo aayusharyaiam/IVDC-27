@@ -5,7 +5,7 @@ import { SectionHeading } from '../components/SectionHeading'
 export function Papers() {
   return (
     <div className="container page-content">
-      <SectionHeading kicker="For authors and researchers" title="Call for papers" intro="Bring original research, grounded questions and new perspectives to the IVDC-2027 conversation." />
+      <SectionHeading kicker="For authors and researchers" title="Call for papers" intro="Bring original research, grounded questions and new perspectives to the IVDC–2027 conversation." />
       <div className="paper-lead"><div><span className="section-kicker">Submission guidelines</span><h2>Make your argument clear, original and useful.</h2></div><a className="button button--gold" href={conference.paperLink} target="_blank" rel="noreferrer">Paper submission link <Icon name="external" size={16} /></a></div>
       <div className="paper-grid">
         <article className="content-card"><span className="card-number">01</span><h3>Submission format</h3><ul className="check-list"><li>Abstract of 250–300 words</li><li>Full paper of up to 5,000–6,000 words</li><li>Times New Roman and APA style</li><li>Similarity and AI-generated content below 10%</li></ul></article>

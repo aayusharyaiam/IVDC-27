@@ -76,7 +76,7 @@ export function Header({ activeTab, menuOpen, onSelect, onMenuToggle }: HeaderPr
       <div className={`mobile-menu-backdrop ${menuOpen ? 'is-visible' : ''}`} onClick={onMenuToggle} aria-hidden="true" />
       <aside id="mobile-navigation" className={`mobile-drawer ${menuOpen ? 'is-open' : ''}`} hidden={!drawerMounted} inert={!menuOpen} aria-hidden={!menuOpen} aria-label="Mobile navigation">
         <div className="drawer-head">
-          <div><span className="drawer-eyebrow">IVDC-2027</span><strong>Conference menu</strong></div>
+          <div><span className="drawer-eyebrow">IVDC–2027</span><strong>Conference menu</strong></div>
           <button ref={closeButtonRef} className="icon-button drawer-close" type="button" onClick={onMenuToggle} aria-label="Close menu"><Icon name="close" size={22} /></button>
         </div>
         <nav className="drawer-nav">
@@ -108,7 +108,7 @@ export function Header({ activeTab, menuOpen, onSelect, onMenuToggle }: HeaderPr
           <button ref={hamburgerRef} className={`hamburger ${menuOpen ? 'is-active' : ''}`} type="button" onClick={onMenuToggle} aria-expanded={menuOpen} aria-controls="mobile-navigation" aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}>
             <span /><span /><span />
           </button>
-          <button className="brand-lockup" type="button" onClick={() => handleSelect('home')} aria-label="Go to IVDC-2027 home">
+          <button className="brand-lockup" type="button" onClick={() => handleSelect('home')} aria-label="Go to IVDC–2027 home">
             <img src={assetPath('bit-mesra-logo.png')} alt="Birla Institute of Technology Mesra" />
             <span><strong>IVDC<span>–2027</span></strong><small>Management Studies · Patna</small></span>
           </button>

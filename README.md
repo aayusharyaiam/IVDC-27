@@ -1,4 +1,4 @@
-# IVDC-2027 Conference Website
+# IVDC–2027 Conference Website
 
 React + TypeScript + Vite single-page conference website for the International Conference on **Intelligent Value Creation in a Digital Civilization** at BIT Mesra, Patna.
 
