@@ -1,3 +1,4 @@
+import { DateDisplay } from '../components/DateDisplay'
 import { conference, dates } from '../data/conference'
 import { Icon } from '../components/Icon'
 import { SectionHeading } from '../components/SectionHeading'
@@ -12,7 +13,7 @@ export function Papers() {
         <article className="content-card content-card--tinted"><span className="card-number">02</span><h3>Who should submit?</h3><p>Academicians, researchers, industry professionals, research scholars and students from diverse disciplines are invited to contribute original work.</p><div className="mini-callout"><strong>05 Dec 2026</strong><span>Full paper submission deadline</span></div></article>
       </div>
        <section className="publication-panel"><div className="publication-heading"><span className="section-kicker">Publication opportunities</span><h2>Selected work may travel further.</h2><p>All accepted extended abstracts will be published in the conference proceedings book with an ISBN. Selected high-quality papers will also be considered for publication subject to peer review and editorial acceptance.</p></div><ul className="publication-list"><li><span>01</span><div><strong>Global Business and Organizational Excellence</strong><small>Wiley</small></div></li><li><span>02</span><div><strong>Activities, Adaptation &amp; Aging</strong><small>Routledge</small></div></li><li><span>03</span><div><strong>International Journal of Quality and Innovation</strong><small>Inderscience</small></div></li><li><span>04</span><div><strong>ISBN-registered conference proceedings</strong><small>All accepted extended abstracts</small></div></li></ul></section>
-      <div className="deadline-strip"><Icon name="calendar" size={20} /><span>Important deadlines</span>{dates.slice(0, 4).map((item) => <strong key={item.label}>{item.date}</strong>)}</div>
+      <div className="deadline-strip"><Icon name="calendar" size={20} /><span>Important deadlines</span>{dates.slice(0, 4).map((item) => <strong key={item.label}><DateDisplay date={item.date} previousDate={item.previousDate} /></strong>)}</div>
     </div>
   )
 }

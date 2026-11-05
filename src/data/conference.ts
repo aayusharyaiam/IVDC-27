@@ -17,8 +17,8 @@ export const conference = {
 }
 
 export const dates: DateItem[] = [
-  { label: 'Abstract submission', date: '05 November 2026', iso: '2026-11-05', detail: 'Share a concise 250–300 word abstract.' },
-  { label: 'Acceptance notification', date: '15 November 2026', iso: '2026-11-15', detail: 'Authors will be notified about abstract decisions.' },
+  { label: 'Abstract submission', date: '25 November 2026', previousDate: '05 November 2026', iso: '2026-11-25', detail: 'Share a concise 250–300 word abstract.' },
+  { label: 'Acceptance notification', date: '01 December 2026', previousDate: '15 November 2026', iso: '2026-12-01', detail: 'Authors will be notified about abstract decisions.' },
   { label: 'Full paper submission', date: '05 December 2026', iso: '2026-12-05', detail: 'Submit the complete paper of up to 5,000–6,000 words.' },
   { label: 'Registration deadline', date: '10 December 2026', iso: '2026-12-10', detail: 'Complete registration before the conference window.' },
   { label: 'Conference', date: '22nd – 23rd January 2027', iso: '2027-01-22', detail: 'Meet the IVDC–2027 community at BIT Mesra, Patna.' },

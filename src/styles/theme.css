@@ -218,6 +218,10 @@
 .date-card-marker { position: relative; z-index: 1; display: grid; place-items: center; width: 85px; height: 85px; color: var(--burgundy); background: var(--gold); border-radius: 50%; }
 .date-card-marker span { font-size: .7rem; font-weight: 700; letter-spacing: .12em; }
 .date-card-copy > span { color: var(--gold-deep); font-size: .67rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.date-display { display: inline-flex; flex-wrap: wrap; align-items: baseline; column-gap: .6em; row-gap: .15em; }
+.date-display > del { opacity: .65; font-weight: 400; }
+.date-display > span, .date-display > del { white-space: nowrap; }
+.date-card-copy { min-width: 0; }
 .date-card-copy h2 { margin: 6px 0 5px; font-family: 'Playfair Display', Georgia, serif; font-size: 1.65rem; letter-spacing: -.03em; }
 .date-card-copy p { margin: 0; font-size: .78rem; }
 .date-card > svg { color: var(--burgundy); }

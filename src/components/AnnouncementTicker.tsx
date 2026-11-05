@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react'
+import { DateDisplay } from './DateDisplay'
 import { useEffect, useState } from 'react'
 import { conference, dates } from '../data/conference'
 import { Icon } from './Icon'
@@ -5,7 +7,7 @@ import { upcomingDateIndex } from '../utils/conferenceDates'
 
 interface TickerItem {
   label: string
-  text: string
+  text: ReactNode
   href: string
   external?: boolean
 }
@@ -21,7 +23,7 @@ export function AnnouncementTicker() {
 
   const items: TickerItem[] = [
     { label: 'Call for Papers', text: 'Submit your research through the official paper submission form', href: conference.paperLink, external: true },
-    { label: 'Next deadline', text: `${nextDate.label} · ${nextDate.date}`, href: '#dates' },
+    { label: 'Next deadline', text: <>{nextDate.label} {'\u00b7'} <DateDisplay date={nextDate.date} previousDate={nextDate.previousDate} /></>, href: '#dates' },
     { label: 'Conference', text: '22nd–23rd January 2027 · BIT Mesra, Patna Campus', href: '#dates' },
     { label: 'Best Paper Award', text: 'One award will be presented in each conference track', href: '#papers' },
   ]

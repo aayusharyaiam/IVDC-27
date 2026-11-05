@@ -38,6 +38,7 @@ export interface Speaker extends Person {
 export interface DateItem {
   label: string
   date: string
+  previousDate?: string
   iso: string
   detail: string
 }
