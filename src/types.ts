@@ -23,6 +23,7 @@ export interface Person {
   email?: string
   phone?: string
   profileUrl?: string
+  imageUrl?: string
 }
 
 export interface CommitteeGroup {

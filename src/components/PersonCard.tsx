@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import type { Person, Speaker } from '../types'
 import { Icon } from './Icon'
 
@@ -7,12 +8,15 @@ interface PersonCardProps {
 }
 
 export function PersonCard({ person, compact = false }: PersonCardProps) {
+  const [failedImageUrl, setFailedImageUrl] = useState<string>()
+  const hasPortrait = Boolean(person.imageUrl && person.imageUrl !== failedImageUrl)
   const initial = person.name.replace(/^(Prof\.\s*\(Dr\.\)|Prof\.|Dr\.|Mr\.|Mrs\.)\s*/i, '').trim().charAt(0) || person.name.charAt(0)
   const displayRole = person.role || ('category' in person ? `${person.category} speaker` : 'Committee member')
 
   return (
-    <article className={`person-card ${compact ? 'person-card--compact' : ''}`}>
-      <div className="person-card-topline"><span className="person-initial">{initial}</span><span className="person-role">{displayRole}</span></div>
+    <article className={`person-card ${compact ? 'person-card--compact' : ''} ${hasPortrait ? 'person-card--portrait' : ''}`}>
+      {hasPortrait && <img className="person-portrait" src={person.imageUrl} alt={`Portrait of ${person.name}`} width={400} height={500} loading="lazy" decoding="async" onError={() => setFailedImageUrl(person.imageUrl)} />}
+      <div className="person-card-topline">{!hasPortrait && <span className="person-initial">{initial}</span>}<span className="person-role">{displayRole}</span></div>
       <h3>{person.name}</h3>
       <p>{person.affiliation}</p>
       {person.email && <a href={`mailto:${person.email}`} className="person-contact"><Icon name="mail" size={15} />{person.email}</a>}

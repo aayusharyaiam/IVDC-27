@@ -52,18 +52,18 @@ export const advisoryCommittee: Person[] = [
 ]
 
 export const internationalSpeakers: Speaker[] = [
-  { name: 'Prof. Weng Marc Lim', category: 'International', role: 'Professor and Dean', affiliation: 'Sunway Business School, Sunway University' },
-  { name: 'Dr. Vinod Mishra', category: 'International', role: 'Professor & Director of Education, Economics', affiliation: 'Monash Business School, Monash University, Australia' },
-  { name: 'Prof. Tapas Mishra', category: 'International', role: 'Professor', affiliation: 'University of Southampton, United Kingdom' },
-  { name: 'Dr. Suzan Dsouza', category: 'International', role: 'Associate Professor', affiliation: 'American University of the Middle East, College of Business Administration, Dasman, Kuwait' },
+  { name: 'Prof. Weng Marc Lim', imageUrl: '/assets/speakers/lim-weng-marc.jpg', category: 'International', role: 'Professor and Dean', affiliation: 'Sunway Business School, Sunway University' },
+  { name: 'Dr. Vinod Mishra', imageUrl: '/assets/speakers/vinod-mishra.jpg', category: 'International', role: 'Professor & Director of Education, Economics', affiliation: 'Monash Business School, Monash University, Australia' },
+  { name: 'Prof. Tapas Mishra', imageUrl: '/assets/speakers/tapas-mishra.jpg', category: 'International', role: 'Professor', affiliation: 'University of Southampton, United Kingdom' },
+  { name: 'Dr. Suzan Dsouza', imageUrl: '/assets/speakers/suzan-dsouza.jpg', category: 'International', role: 'Associate Professor', affiliation: 'American University of the Middle East, College of Business Administration, Dasman, Kuwait' },
 ]
 
 export const nationalSpeakers: Speaker[] = [
-  { name: 'Prof. Arunabha Mukhopadhyay', category: 'National', role: 'Professor, Information Technology and Systems', affiliation: 'IIM Lucknow' },
-  { name: 'Prof. Ganesh Prasad Sahu', category: 'National', role: 'Professor & Head, School of Management Studies', affiliation: 'MNNIT Allahabad, Prayagraj' },
-  { name: 'Prof. Pratul Chandra Kalita', category: 'National', role: 'Professor & Head, Department of Design', affiliation: 'IIT Guwahati' },
-  { name: 'Prof. Pramod Kumar Naik', category: 'National', role: 'Associate Professor, Finance', affiliation: 'Department of Humanities and Social Sciences, IIT Madras' },
-  { name: 'Prof. Medha Srivastava', category: 'National', role: 'Associate Professor', affiliation: 'Department of Management, IIM Bodhgaya' },
+  { name: 'Prof. Arunabha Mukhopadhyay', imageUrl: '/assets/speakers/arunabha-mukhopadhyay.jpg', category: 'National', role: 'Professor, Information Technology and Systems', affiliation: 'IIM Lucknow' },
+  { name: 'Prof. Ganesh Prasad Sahu', imageUrl: '/assets/speakers/ganesh-sahu.jpg', category: 'National', role: 'Professor & Head, School of Management Studies', affiliation: 'MNNIT Allahabad, Prayagraj' },
+  { name: 'Prof. Pratul Chandra Kalita', imageUrl: '/assets/speakers/pratul-chandra-kalita.jpg', category: 'National', role: 'Professor & Head, Department of Design', affiliation: 'IIT Guwahati' },
+  { name: 'Prof. Pramod Kumar Naik', imageUrl: '/assets/speakers/pramod-kumar-naik.png', category: 'National', role: 'Associate Professor, Finance', affiliation: 'Department of Humanities and Social Sciences, IIT Madras' },
+  { name: 'Prof. Medha Srivastava', imageUrl: '/assets/speakers/medha-srivastava.jpg', category: 'National', role: 'Associate Professor', affiliation: 'Department of Management, IIM Bodhgaya' },
   { name: 'Shri Subrat Kumar Swain', category: 'National', role: 'General Manager and Zonal Head', affiliation: 'Bank of Baroda' },
   { name: 'Shri K D Gupta', category: 'National', role: 'Deputy General Manager', affiliation: 'Union Bank of India' },
 ]
