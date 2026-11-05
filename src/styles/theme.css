@@ -218,6 +218,10 @@
 .date-card-marker { position: relative; z-index: 1; display: grid; place-items: center; width: 85px; height: 85px; color: var(--burgundy); background: var(--gold); border-radius: 50%; }
 .date-card-marker span { font-size: .7rem; font-weight: 700; letter-spacing: .12em; }
 .date-card-copy > span { color: var(--gold-deep); font-size: .67rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.date-display { display: inline-flex; flex-wrap: wrap; align-items: baseline; column-gap: .6em; row-gap: .15em; }
+.date-display > del { opacity: .65; font-weight: 400; }
+.date-display > span, .date-display > del { white-space: nowrap; }
+.date-card-copy { min-width: 0; }
 .date-card-copy h2 { margin: 6px 0 5px; font-family: 'Playfair Display', Georgia, serif; font-size: 1.65rem; letter-spacing: -.03em; }
 .date-card-copy p { margin: 0; font-size: .78rem; }
 .date-card > svg { color: var(--burgundy); }
@@ -273,6 +277,9 @@
 .person-card { min-height: 205px; padding: 21px; border: 1px solid var(--line); background: var(--paper); transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
 .person-card:hover { border-color: #c8a786; box-shadow: 0 12px 24px rgba(56,33,27,.07); transform: translateY(-2px); }
 .person-card--compact { min-height: 160px; padding: 18px; }
+.person-portrait { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; margin-bottom: 19px; background: #f2e2d5; }
+.person-card--portrait .person-card-topline { justify-content: flex-start; }
+.person-card--portrait .person-role { text-align: left; }
 .person-card-topline { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 19px; }
 .person-initial { display: grid; place-items: center; width: 29px; height: 29px; color: var(--burgundy); background: #f2e2d5; border-radius: 50%; font-family: 'Playfair Display', Georgia, serif; font-size: .95rem; }
 .person-role { color: var(--gold-deep); font-size: .59rem; font-weight: 700; letter-spacing: .08em; text-align: right; text-transform: uppercase; }
@@ -294,10 +301,10 @@
 .national-toggle { display: flex; align-items: center; gap: 10px; color: var(--burgundy); font-size: .7rem; font-weight: 700; }
 .national-toggle svg { transition: transform .25s ease; }
 .national-speaker-panel.is-open .national-toggle svg { transform: rotate(180deg); }
-.national-speaker-content { max-height: 0; overflow: hidden; visibility: hidden; opacity: 0; transform: translateY(-10px); transition: max-height .55s cubic-bezier(.22,.61,.36,1), opacity .3s ease, transform .55s cubic-bezier(.22,.61,.36,1), visibility 0s linear .55s; }
-.national-speaker-content > .speaker-grid { padding: 0 28px; }
-.national-speaker-panel.is-open .national-speaker-content { max-height: 2200px; visibility: visible; opacity: 1; transform: translateY(0); transition-delay: 0s; }
-.national-speaker-panel.is-open .national-speaker-content > .speaker-grid { padding-bottom: 28px; }
+.national-speaker-content { display: grid; grid-template-rows: 0fr; overflow: hidden; visibility: hidden; opacity: 0; transform: translateY(-10px); transition: grid-template-rows .55s cubic-bezier(.22,.61,.36,1), opacity .3s ease, transform .55s cubic-bezier(.22,.61,.36,1), visibility 0s linear .55s; }
+.national-speaker-content-inner { min-height: 0; overflow: hidden; }
+.national-speaker-content .speaker-grid { padding: 0 28px 28px; }
+.national-speaker-panel.is-open .national-speaker-content { grid-template-rows: 1fr; visibility: visible; opacity: 1; transform: translateY(0); transition-delay: 0s; }
 
 /* Contact */
 .contact-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 15px; }
@@ -456,8 +463,7 @@
   .person-grid, .speaker-grid { grid-template-columns: 1fr; }
   .person-card, .speaker-grid .person-card { min-height: 0; }
   .national-speaker-trigger { align-items: flex-start; flex-direction: column; gap: 17px; padding: 22px 19px; }
-  .national-speaker-content > .speaker-grid { padding-inline: 19px; }
-  .national-speaker-panel.is-open .national-speaker-content > .speaker-grid { padding-inline: 19px; padding-bottom: 20px; }
+  .national-speaker-content .speaker-grid { padding-inline: 19px; padding-bottom: 20px; }
   .contact-card--primary { padding: 28px 22px; }
   .contact-card--primary h2 { font-size: 2.25rem; }
   .contact-person { padding: 19px 16px; }

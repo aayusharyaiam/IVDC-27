@@ -23,6 +23,7 @@ export interface Person {
   email?: string
   phone?: string
   profileUrl?: string
+  imageUrl?: string
 }
 
 export interface CommitteeGroup {
@@ -37,6 +38,7 @@ export interface Speaker extends Person {
 export interface DateItem {
   label: string
   date: string
+  previousDate?: string
   iso: string
   detail: string
 }
